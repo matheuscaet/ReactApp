@@ -30,27 +30,31 @@ const AddPage = () => {
     
     if(cpassword === password & password != "" & user != ""){
       
-      AddUser(user, password);
-      history.push("/");
+
+      const usern = [{
+        user:user,
+        password:password
+      }];
+  
+      axios.post("http://localhost:8081/adduser", usern).then((response) => {
+        
+        alert(response.data.message);
+        
+        if(response.data.type == 0){
+          history.push("/");
+        }
+        if(response.data.type == 1){
+          setUser("");
+        } else {
+          console.log("Erro: " +response.data);
+        }
+        
+      
+      });
       
     }else{
       alert("Usuario ou Senha invalida!!");
     }
-  }
-
-  function AddUser(usu, psw){
-    const usern = [{
-      user:usu,
-      password:psw
-    }];
-
-    
-    console.log(usern);
-
-    axios.post("http://localhost:8081/adduser", usern).then((response) => alert("Bem vindo, " + response.data.user));
-
-    return true;
-  
   }
 
   function BackButton(){
