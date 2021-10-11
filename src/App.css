@@ -28,28 +28,11 @@
   margin: 15px;
 }
 
-.btn-back {
-  font-size: 30px;
-  height: 56px;
-  background-color: transparent;
-  border: 0px;
-  color: rgb(73, 97, 200);
-  transition: all 0.1s ease-in-out 0s;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-  margin: 15px 8%;
-}
-
-.btn-back:hover {
-  background-color: transparent;
-  border: 0px;
-  color: rgb(34, 64, 194);
-}
-
 .btn-1:hover {
-  background-color: rgb(118, 134, 206);
+  background-color: rgb(9, 20, 66);
+  border-color: rgb(9, 20, 66);
 }
+
 .btn-2 {
   font-size: 16px;
   height: 56px;
@@ -65,8 +48,27 @@
 }
 
 .btn-2:hover {
-  background-color: rgb(118, 134, 206);
-  color: white;
+  color: #404040;
+  border-color: #404040;
+}
+
+.btn-back {
+  font-size: 30px;
+  height: 56px;
+  background-color: transparent;
+  border: 0px;
+  color: rgb(73, 97, 200);
+  transition: all 0.1s ease-in-out 0s;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 15px 8%;
+}
+
+.btn-back:hover {
+  background-color: transparent;
+  border-color: #404040;
+  color: #404040;
 }
 
 .input-1 {
@@ -97,6 +99,7 @@
   padding: 15px;
   margin: auto;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .item-info {
@@ -110,8 +113,9 @@
 
 .item-info:hover {
   background-color: transparent;
-  border: 0px;
-  color: rgb(34, 64, 194);
+  border-color: #404040;
+  color: #404040;
+  font-weight: bold;
 }
 
 .up-nav {
