@@ -3,6 +3,7 @@ import { useHistory } from "react-router-dom";
 import { useParams } from "react-router";
 import axios from "axios";
 
+import {CgPushChevronLeftR} from "react-icons/cg"
 import { useState, useEffect } from 'react';
 import NavUp from './NavUp';
 
@@ -18,7 +19,7 @@ const ItemDetails = () => {
             history.goBack();
         };
         return (
-          <button className="btn-1" onClick={handleBackButtonClick}>Voltar</button>
+          <button className="btn-back" onClick={handleBackButtonClick}>< CgPushChevronLeftR/></button>
         )
       }
       const [item, setItem]  = useState ([{
