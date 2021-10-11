@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { useHistory } from 'react-router';
 import axios from 'axios';
+import { CgAddR, CgPushChevronLeftR } from 'react-icons/cg';
 
 const AddPage = () => {
   
@@ -60,7 +61,7 @@ const AddPage = () => {
     }
     
     return (
-      <button className="btn-2" onClick={handleBack}>Voltar</button>
+      <button className="btn-2" onClick={handleBack}>Voltar <CgPushChevronLeftR/></button>
     )
   }
     return ( 
@@ -105,7 +106,7 @@ const AddPage = () => {
           />
         </div>
         <div className="line">
-          <button className="btn-1" onClick={handleAdd}>Cadastro</button>
+          <button className="btn-1" onClick={handleAdd}>Cadastro <CgAddR/></button>
           <BackButton/>
         </div>
       </div>

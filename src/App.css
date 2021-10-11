@@ -15,14 +15,13 @@
 }
 
 .btn-1 {
-  padding: 25px;
   font-size: 16px;
   height: 56px;
   background-color: rgb(73, 97, 200);
   border: 1px solid rgb(73, 97, 200);
   color: rgb(255, 255, 255);
   transition: all 0.1s ease-in-out 0s;
-  width: 100px;
+  width: 130px;
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
@@ -30,7 +29,6 @@
 }
 
 .btn-back {
-  padding: 25px;
   font-size: 30px;
   height: 56px;
   background-color: transparent;
@@ -53,14 +51,13 @@
   background-color: rgb(118, 134, 206);
 }
 .btn-2 {
-  padding: 25px;
   font-size: 16px;
   height: 56px;
   color: rgb(73, 97, 200);
   border: 1px solid rgb(73, 97, 200);
   background-color: rgb(255, 255, 255);
   transition: all 0.1s ease-in-out 0s;
-  width: 100px;
+  width: 130px;
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
@@ -86,7 +83,7 @@
 }
 
 .item-container {
-  color: rgb(73, 97, 200);
+  color: #404040;
   background-color: rgb(255, 255, 255);
   transition: all 0.1s ease-in-out 0s;
   font-weight: bold;
@@ -99,6 +96,7 @@
   width: 40%;
   padding: 15px;
   margin: auto;
+  justify-content: space-between;
 }
 
 .item-info {
@@ -107,6 +105,7 @@
   margin: 0 5px;
   background-color: transparent;
   font-size: 15px;
+  cursor: pointer;
 }
 
 .item-info:hover {
@@ -128,19 +127,22 @@
   margin: auto;
   width: 80%;
   border: 1px solid rgb(73, 97, 200);
-  border-radius: 8px;
+  border-radius: 15px 15px 0px 15px;
   display: flex;
   flex-direction: column;
+  background-color: rgb(73, 97, 200);
 }
-.item-box1 {
-  padding: 10px;
+.item-head {
+  padding: 16px 18px;
   background-color: rgb(73, 97, 200);
   color: white;
+  border-radius: 15px 15px 0px 0px;
 }
-.item-box2 {
+.item-body {
   padding: 10px;
   background-color: white;
-  color: rgb(73, 97, 200);
+  color: #404040;
+  border-radius: 15px 0px 0px 15px;
 }
 
 .back-button-container {

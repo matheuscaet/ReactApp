@@ -40,9 +40,13 @@ const ItemDetails = () => {
 				<BackButton/>
 			</div>
 			<div className="item-details-container">
-        <div className="item-box1"><h2>{item.name}</h2></div>
-        <div className="item-box2"><h3>ID: {item._id}</h3></div>
-        <div className="item-box2"><p>Descrição: {item.desc}</p></div>
+        <div className="item-head">
+          <div><h2>{item.name}</h2></div>
+        </div>
+        <div className="item-body">
+          <div><h3>ID: {item._id}</h3></div>
+          <div><p>Descrição: {item.desc}</p></div>
+        </div>
 			</div>
 		</>
 	);

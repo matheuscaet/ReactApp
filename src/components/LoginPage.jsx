@@ -6,6 +6,7 @@ import axios from "axios";
 import { isAuthenticated, login } from "../helper/auth";
 
 import { useState, useEffect } from 'react';
+import { CgAddR, CgEnter } from "react-icons/cg";
 
 const LoginPage = () => {
     const history = useHistory();
@@ -78,7 +79,7 @@ const LoginPage = () => {
       }
       
       return (
-        <button className="btn-2" onClick={handleCad}>Cadastro</button>
+        <button className="btn-2" onClick={handleCad}>Cadastro <CgAddR/></button>
       )
     }
 
@@ -111,7 +112,7 @@ const LoginPage = () => {
             />
           </div>
           <div className="line">
-            <button className="btn-1" onClick={handleLogin}>Login</button>
+            <button className="btn-1" onClick={handleLogin}>Login <CgEnter/></button>
             <Cadbtn/>
           </div>
         </div>

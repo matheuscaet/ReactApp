@@ -1,5 +1,5 @@
 import React from 'react';
-import {CgInfo} from "react-icons/cg"
+import {CgChevronRight} from "react-icons/cg"
 import { useParams, useHistory } from "react-router";
 
 
@@ -44,7 +44,7 @@ const AdminPage = () => {
                         {itens.map(item => 
                             <div className="item-line">
                                 <div className="item-name">{item.name}</div>
-                                <button className="item-info" onClick={(e) => handleDetails1(item.name, e)}>< CgInfo/></button>
+                                <button className="item-info" onClick={(e) => handleDetails1(item.name, e)}>< CgChevronRight/></button>
                             </div>
                         )}
                     </div>
